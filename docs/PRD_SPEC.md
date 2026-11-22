@@ -1,7 +1,7 @@
 # PRD_SPEC — Café Lua (Coffee Delivery)
 
 > Product Requirements Document do projeto final da disciplina **Single Page Application (SPA)**.
-> Referência visual: [Figma *Coffee Delivery | Projeto Final React*](https://www.figma.com/design/Cm9aS21UxifX9IdLSTRKTE/Untitled?node-id=1-3) (Home `2:1550`, Checkout `217:511`, Confirmação `222:824`, Style Guide).
+> Referência visual: [Figma *Coffee Delivery | Projeto Final React*](https://www.figma.com/design/Cm9aS21UxifX9IdLSTRKTE/coffee-delivery?node-id=1-3) (Home `2:1550`, Checkout `217:511`, Confirmação `222:824`, Style Guide).
 > Documentos relacionados: [TECH_SPEC](./TECH_SPEC.md) · [TASKS_SPEC](./TASKS_SPEC.md) · [AI_USAGE](./AI_USAGE.md) · [AGENTS](../AGENTS.md)
 
 ## 1. Visão geral
