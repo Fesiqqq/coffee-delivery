@@ -17,7 +17,7 @@
 ---
 
 ## Sumário
-- [Objetivos](#objetivos) · [Funcionalidades](#funcionalidades) · [Screenshots](#screenshots)
+- [Objetivos](#objetivos) · [Funcionalidades](#funcionalidades) · [Demonstração em vídeo](#demonstração-em-vídeo) · [Screenshots](#screenshots)
 - [Stack](#stack) · [Instalação e scripts](#instalação-e-scripts) · [Arquitetura](#arquitetura)
 - [Decisões de produto](#decisões-de-produto) · [Branding com IA](#branding-com-ia)
 - [Acessibilidade e responsividade](#acessibilidade-e-responsividade) · [Testes](#testes) · [Uso de IA](#uso-de-ia)
@@ -41,6 +41,15 @@ Consolidar React, TypeScript, componentes, Props, Hooks, Context API + `useReduc
 - 🌙 Light/dark mode com fallback para `prefers-color-scheme` (RF-14)
 - 📱 Mobile first, testado de 320 a 1440 px (RF-15)
 - 🎨 Logo original criada com IA no Header e no favicon (RF-16)
+
+## Demonstração em vídeo
+
+| Vídeo | Conteúdo | Duração |
+| --- | --- | --- |
+| [🎬 Desktop](https://github.com/Fesiqqq/coffee-delivery/releases/download/v1.0/demo-desktop.mp4) | Catálogo, carrinho vazio, adição de vários cafés, erro de validação, CEP automático, pedido confirmado — temas escuro e claro | 1min21s |
+| [📱 Celular](https://github.com/Fesiqqq/coffee-delivery/releases/download/v1.0/demo-mobile.mp4) | Mesmo fluxo em tela de celular (DevTools), com o badge somando unidades e o ViaCEP preenchendo o endereço | 44s |
+
+> Os vídeos estão anexados ao release [v1.0 — Entrega final](https://github.com/Fesiqqq/coffee-delivery/releases/tag/v1.0) (o vídeo de desktop passa do limite de 100 MB por arquivo do repositório).
 
 ## Screenshots
 

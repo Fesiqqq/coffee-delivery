@@ -24,6 +24,7 @@
 | T-15c | [x] | Code splitting das rotas | RNF-03 | `App.tsx`, `PageLayout.tsx` | Bundle inicial < 250 kB gzip | `npm run build` (110 kB gzip) | `refactor: lazy-load checkout and success routes` |
 | T-16 | [x] | Acessibilidade (foco, labels, erros, skip link) | RNF-01 | componentes | Fluxo completo só com teclado | Navegação por teclado manual | `fix: improve accessibility of forms and controls` |
 | T-17 | [x] | README, AI_USAGE e screenshots | — | `README.md`, `docs/AI_USAGE.md`, `docs/screenshots/` | Seções exigidas presentes | Revisão do checklist final | `docs: add README, AI usage log and screenshots` |
+| T-17b | [x] | Vídeos de demonstração do fluxo de compra | — | release `v1.0`, `README.md` | Fluxo completo gravado em desktop e celular | Download dos anexos conferido (HTTP 200, tamanho completo) | `docs: add demo videos to README` |
 | T-18 | [x] | Publicar no GitHub e na Vercel | — | `vercel.json`, `README.md` | Link público funcionando | Fluxo completo na URL publicada (ViaCEP real, refresh em /checkout e /success, 375 px sem overflow) | `docs: add live Vercel link` |
 | T-19 | [ ] | Ensaio da apresentação | — | — | Saber explicar reducer, Context, Zod e persistência | — | — |
 
