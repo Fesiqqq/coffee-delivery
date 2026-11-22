@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 64" role="img" aria-label="Café Lua">
+  <defs>
+    <mask id="crescent-h-light">
+      <rect width="64" height="64" fill="#fff"/>
+      <circle cx="42.5" cy="9.5" r="8.5" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="38" cy="14" r="10" fill="#DBAC2C" mask="url(#crescent-h-light)"/>
+  <path d="M22 27c-3.5-4 3.5-6 0-10.5" fill="none" stroke="#DBAC2C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 27c-3-3.2 3-5 0-8.4" fill="none" stroke="#DBAC2C" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <path d="M44 34h3.5a7 7 0 0 1 0 14H42" fill="none" stroke="#4B2995" stroke-width="4" stroke-linecap="round"/>
+  <path d="M8 30h40v5a20 20 0 0 1-20 20A20 20 0 0 1 8 35z" fill="#4B2995"/>
+  <ellipse cx="28" cy="31" rx="17" ry="2.6" fill="#C47F17"/>
+  <rect x="4" y="57" width="48" height="4" rx="2" fill="#4B2995"/>
+  <text x="70" y="44" font-family="'Baloo 2', 'Trebuchet MS', sans-serif" font-size="34" font-weight="800" fill="#272221">Café <tspan fill="#4B2995">Lua</tspan></text>
+</svg>
