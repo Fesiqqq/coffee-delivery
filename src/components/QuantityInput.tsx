@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   button {
     display: grid;
     place-items: center;
-    width: 2.5rem;
+    width: 2.125rem;
     height: 2.5rem;
     border-radius: ${({ theme }) => theme.radii.md};
     color: ${({ theme }) => theme.colors.accentStrong};
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   }
 
   output {
-    min-width: 1.5rem;
+    min-width: 1.25rem;
     text-align: center;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.title};

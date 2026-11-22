@@ -32,6 +32,7 @@ const Grid = styled.ul`
   }
   @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
   }
 `
 

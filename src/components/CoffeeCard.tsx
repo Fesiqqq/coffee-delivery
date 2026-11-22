@@ -11,7 +11,7 @@ const Card = styled.article`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 1.25rem 1.25rem;
+  padding: 0 1rem 1.25rem;
   margin-top: 1.25rem;
   border-radius: ${({ theme }) => theme.radii.card};
   background: ${({ theme }) => theme.colors.surface};
@@ -58,9 +58,10 @@ const Tags = styled.ul`
 
 const Footer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.75rem 0.5rem;
   width: 100%;
   margin-top: 1.5rem;
 `
@@ -80,7 +81,7 @@ const Price = styled.span`
 const Controls = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 `
 
 const AddButton = styled.button`
