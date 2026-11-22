@@ -1,8 +1,11 @@
+import { lazy } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { PageLayout } from './components/PageLayout'
-import { Checkout } from './pages/Checkout'
 import { Home } from './pages/Home'
-import { Success } from './pages/Success'
+
+// Checkout (React Hook Form + Zod) e Sucesso só são baixados quando acessados (RNF-03).
+const Checkout = lazy(() => import('./pages/Checkout').then((m) => ({ default: m.Checkout })))
+const Success = lazy(() => import('./pages/Success').then((m) => ({ default: m.Success })))
 
 /** Apenas rotas (RF-07). Regras ficam em reducers, utils, schemas e hooks. */
 export function App() {

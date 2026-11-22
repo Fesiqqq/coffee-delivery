@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { Header } from './Header'
@@ -27,6 +27,12 @@ const Main = styled.main`
   }
 `
 
+const Loading = styled.p`
+  padding: 4rem 1rem;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.textMuted};
+`
+
 const Footer = styled.footer`
   padding: 1.5rem 1rem 2rem;
   text-align: center;
@@ -48,7 +54,9 @@ export function PageLayout() {
       <SkipLink href="#conteudo">Pular para o conteúdo</SkipLink>
       <Header />
       <Main id="conteudo" tabIndex={-1}>
-        <Outlet />
+        <Suspense fallback={<Loading role="status">Carregando…</Loading>}>
+          <Outlet />
+        </Suspense>
       </Main>
       <Footer>
         Café Lua · projeto acadêmico baseado no desafio Coffee Delivery · pedidos e pagamentos são fictícios
