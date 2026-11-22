@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="#"><strong>🔗 Aplicação publicada</strong></a> (link a adicionar após o deploy) ·
+  <a href="https://coffee-delivery-gray-eight.vercel.app"><strong>🔗 Aplicação publicada na Vercel</strong></a> ·
   <a href="#">Figma — Coffee Delivery | Projeto Final React</a> (link fornecido pelo professor)
 </p>
 
