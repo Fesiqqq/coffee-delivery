@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://coffee-delivery-gray-eight.vercel.app"><strong>🔗 Aplicação publicada na Vercel</strong></a> ·
-  <a href="#">Figma — Coffee Delivery | Projeto Final React</a> (link fornecido pelo professor)
+  <a href="https://www.figma.com/design/Cm9aS21UxifX9IdLSTRKTE/Untitled?node-id=1-3">🎨 Figma — Coffee Delivery | Projeto Final React</a>
 </p>
 
 ---

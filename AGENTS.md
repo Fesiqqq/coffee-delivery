@@ -1,7 +1,7 @@
 # AGENTS.md — Diretrizes para assistentes de IA
 
 ## Contexto
-Projeto final da disciplina **Single Page Application**: **Café Lua**, uma adaptação do desafio *Coffee Delivery* (catálogo → carrinho → checkout → confirmação de pedido fictício). Referência visual: Figma *Coffee Delivery | Projeto Final React* (Home `2:1550`, Checkout `217:511`, Confirmação `222:824`, Style Guide com Baloo 2/Roboto, amarelo e roxo).
+Projeto final da disciplina **Single Page Application**: **Café Lua**, uma adaptação do desafio *Coffee Delivery* (catálogo → carrinho → checkout → confirmação de pedido fictício). Referência visual: [Figma *Coffee Delivery | Projeto Final React*](https://www.figma.com/design/Cm9aS21UxifX9IdLSTRKTE/Untitled?node-id=1-3) (Home `2:1550`, Checkout `217:511`, Confirmação `222:824`, Style Guide com Baloo 2/Roboto, amarelo e roxo).
 
 ## Leia antes de escrever código
 1. [`docs/PRD_SPEC.md`](docs/PRD_SPEC.md) — requisitos RF-01..RF-16, regras RN-01..RN-10.
