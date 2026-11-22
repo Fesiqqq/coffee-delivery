@@ -16,6 +16,7 @@
 | styled-components | 6 | Estilos + tema | Herdado do desafio original; `ThemeProvider` facilita light/dark com tokens tipados | RF-14, RF-15 |
 | Phosphor Icons | 2 | Ícones | Mesmo set do Style Guide do Figma | — |
 | Vitest + Testing Library + jsdom | 5 / 16 | Testes | Integrado ao Vite, API compatível com Jest | RNF-06 |
+| playwright-core | 1 | Script de evidências (`npm run screenshots`) | Usa o Edge/Chrome já instalado, sem baixar navegadores; percorre o fluxo e mede rolagem horizontal | RF-15 |
 | oxlint | 1 | Lint | Vem no template do Vite, muito rápido | RNF-06 |
 | ViaCEP | — | API pública de CEP | Gratuita, sem chave, CORS liberado | RF-08, RN-07 |
 
@@ -69,7 +70,7 @@ src/
 ├── App.tsx
 └── main.tsx
 public/                favicon.svg
-scripts/               generate-coffee-art.mjs (gera as ilustrações SVG)
+scripts/               generate-brand.mjs, generate-coffee-art.mjs (assets SVG), screenshots.mjs (evidências)
 ```
 
 ## 4. Tipos principais (`src/types/index.ts`)
@@ -151,7 +152,7 @@ Inicialização *lazy* do `useReducer` (`useReducer(reducer, undefined, init)`) 
 
 ## 7. Rotas, formulário e cálculos
 
-**Rotas** (`App.tsx`): `/` Home, `/checkout` Checkout, `/success` Success, `*` → redireciona para `/`. Navegação via `<Link>` e `useNavigate` (RF-07).
+**Rotas** (`App.tsx`): `/` Home, `/checkout` Checkout, `/success` Success, `*` → redireciona para `/`. Navegação via `<Link>` e `useNavigate` (RF-07). Checkout e Success são carregados com `React.lazy`; o `<Suspense>` fica no `PageLayout` para o Header permanecer visível (bundle inicial ≈ 110 kB gzip, RNF-03).
 
 **Schema Zod** (`src/schemas/checkout.ts`, RN-07):
 
@@ -204,4 +205,4 @@ npm run lint       # oxlint
 npm run build      # tsc -b && vite build
 ```
 
-Validação manual responsiva: DevTools nas larguras 320, 375, 390, 768, 1280 e 1440 px, nos dois temas (evidências em `docs/screenshots/`).
+Validação responsiva automatizada: `npm run screenshots` (com `npm run dev` ativo) percorre o fluxo em 375 e 1440 px nos dois temas, salva `docs/screenshots/` e falha se houver rolagem horizontal em 320, 375, 390, 768, 1280 ou 1440 px.
